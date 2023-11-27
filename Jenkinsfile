@@ -4,11 +4,11 @@ pipeline {
 	
 	stages{
 		
-		step ("Compile"){
+		step ('Compile'){
 			bat "javac Sample.java"
 		}
 
-		step ("Execute"){
+		step ('Execute'){
 			bat "java Sample"
 		} 
 	}
