@@ -3,13 +3,17 @@ pipeline {
 	agent any
 	
 	stages{
-		
-		step ('Compile'){
-			bat "javac Sample.java"
+		stage ('Compile'){
+			steps {
+				bat "javac Sample.java"
+			      }
 		}
 
-		step ('Execute'){
-			bat "java Sample"
-		} 
+		stage ('Execute'){
+			steps {
+				bat "java Sample"
+			      }
+		}
+
 	}
 }
